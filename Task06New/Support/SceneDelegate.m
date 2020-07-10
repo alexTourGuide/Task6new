@@ -22,8 +22,13 @@
     
     UIWindow *window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
     window.rootViewController = [[UINavigationController alloc] initWithRootViewController: [StartViewController new]];
+    [window.rootViewController prefersStatusBarHidden];
     self.window = window;
     [self.window makeKeyAndVisible];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 

@@ -35,12 +35,10 @@
     [self setupPhoneInfo];
     [self setupFigures];
     [self setupButtons];
-    [self subscribeOnBackForegroundNotifications];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self subscribeOnBackForegroundNotifications];
     [self.navigationController setNavigationBarHidden:NO];
     [self setupNavigationBar];
     [self startFiguresAnimation];
@@ -48,9 +46,19 @@
     [self.view updateConstraintsIfNeeded];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self subscribeOnBackForegroundNotifications];
+}
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self stopFiguresAnimation];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [self unsubcribeOnBackForegroundNotifications];
 }
 
 #pragma mark - Setup Views
@@ -128,6 +136,7 @@
 #pragma mark - Helpers
 
 - (void)startFiguresAnimation {
+    NSLog(@"Start Animation");
     [self.view layoutIfNeeded];
     [self.view updateConstraintsIfNeeded];
     [self.circleView startAnimation];
@@ -136,14 +145,34 @@
 }
 
 - (void)stopFiguresAnimation {
+    NSLog(@"Stop Animation");
     [self.circleView.layer removeAllAnimations];
     [self.rectangleView.layer removeAllAnimations];
     [self.triangleView.layer removeAllAnimations];
 }
 
+- (void)restartAnimation {
+    NSLog(@"Restart Animation");
+    [self stopFiguresAnimation];
+    [self startFiguresAnimation];
+    [self.view updateConstraintsIfNeeded];
+    [self.view layoutIfNeeded];
+}
+
+#pragma mark - Notifications methods
+
 - (void)subscribeOnBackForegroundNotifications {
+    NSLog(@"subscribeOnBackForegroundNotifications");
     [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(stopFiguresAnimation) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(startFiguresAnimation) name:UIApplicationWillEnterForegroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(restartAnimation) name:UIDeviceOrientationDidChangeNotification object:nil];
+}
+
+- (void)unsubcribeOnBackForegroundNotifications {
+    NSLog(@"unsubscribeOnBackForegroundNotifications");
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillEnterForegroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
 @end

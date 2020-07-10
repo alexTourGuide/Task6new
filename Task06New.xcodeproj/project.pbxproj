@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3246C9324B8FE7E00538328 /* GalleryCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3246C9124B8FE7E00538328 /* GalleryCollectionViewController.m */; };
+		F3246C9424B8FE7E00538328 /* GalleryCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3246C9224B8FE7E00538328 /* GalleryCollectionViewController.xib */; };
+		F3246C9724B9024500538328 /* ShowAlertMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3246C9624B9024500538328 /* ShowAlertMessage.m */; };
+		F3246C9B24B908F500538328 /* MediaCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3246C9924B908F500538328 /* MediaCollectionViewCell.m */; };
+		F3246C9C24B908F500538328 /* MediaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3246C9A24B908F500538328 /* MediaCollectionViewCell.xib */; };
 		F325111A24B7326E00188B32 /* UIView+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = F325111924B7326E00188B32 /* UIView+HexColors.m */; };
 		F325111E24B734C500188B32 /* FiguresView.m in Sources */ = {isa = PBXBuildFile; fileRef = F325111D24B734C500188B32 /* FiguresView.m */; };
+		F325934624B9161A00D6244D /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F325934524B9161900D6244D /* ImageViewController.m */; };
 		F328330724B7A6140041C6FA /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F328330524B7A6140041C6FA /* StartViewController.m */; };
 		F328330824B7A6140041C6FA /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F328330624B7A6140041C6FA /* StartViewController.xib */; };
 		F328330B24B7BEAB0041C6FA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F328330A24B7BEAB0041C6FA /* Constants.m */; };
@@ -22,10 +28,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F3246C9024B8FE7E00538328 /* GalleryCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewController.h; sourceTree = "<group>"; };
+		F3246C9124B8FE7E00538328 /* GalleryCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewController.m; sourceTree = "<group>"; };
+		F3246C9224B8FE7E00538328 /* GalleryCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewController.xib; sourceTree = "<group>"; };
+		F3246C9524B9024500538328 /* ShowAlertMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAlertMessage.h; sourceTree = "<group>"; };
+		F3246C9624B9024500538328 /* ShowAlertMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAlertMessage.m; sourceTree = "<group>"; };
+		F3246C9824B908F500538328 /* MediaCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaCollectionViewCell.h; sourceTree = "<group>"; };
+		F3246C9924B908F500538328 /* MediaCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaCollectionViewCell.m; sourceTree = "<group>"; };
+		F3246C9A24B908F500538328 /* MediaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCollectionViewCell.xib; sourceTree = "<group>"; };
 		F325111824B7326E00188B32 /* UIView+HexColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+HexColors.h"; sourceTree = "<group>"; };
 		F325111924B7326E00188B32 /* UIView+HexColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+HexColors.m"; sourceTree = "<group>"; };
 		F325111C24B734C500188B32 /* FiguresView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiguresView.h; sourceTree = "<group>"; };
 		F325111D24B734C500188B32 /* FiguresView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiguresView.m; sourceTree = "<group>"; };
+		F325934424B9161900D6244D /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		F325934524B9161900D6244D /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		F325934824B91CFA00D6244D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		F325934A24B91D0D00D6244D /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		F328330424B7A6140041C6FA /* StartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		F328330524B7A6140041C6FA /* StartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		F328330624B7A6140041C6FA /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
@@ -65,11 +83,72 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F325933524B912BB00D6244D /* InfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				F328330C24B7D2860041C6FA /* InfoViewController.h */,
+				F328330D24B7D2860041C6FA /* InfoViewController.m */,
+				F328330E24B7D2860041C6FA /* InfoViewController.xib */,
+			);
+			path = InfoVC;
+			sourceTree = "<group>";
+		};
+		F325933624B912CB00D6244D /* StartVC */ = {
+			isa = PBXGroup;
+			children = (
+				F328330424B7A6140041C6FA /* StartViewController.h */,
+				F328330524B7A6140041C6FA /* StartViewController.m */,
+				F328330624B7A6140041C6FA /* StartViewController.xib */,
+			);
+			path = StartVC;
+			sourceTree = "<group>";
+		};
+		F325934724B91CF900D6244D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F325934A24B91D0D00D6244D /* Photos.framework */,
+				F325934824B91CFA00D6244D /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F325935124B91D7B00D6244D /* GalleryVC */ = {
+			isa = PBXGroup;
+			children = (
+				F3246C9024B8FE7E00538328 /* GalleryCollectionViewController.h */,
+				F3246C9124B8FE7E00538328 /* GalleryCollectionViewController.m */,
+				F3246C9224B8FE7E00538328 /* GalleryCollectionViewController.xib */,
+				F325935224B91D9700D6244D /* Cell */,
+				F325935324B91DBA00D6244D /* ImageVC */,
+			);
+			path = GalleryVC;
+			sourceTree = "<group>";
+		};
+		F325935224B91D9700D6244D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3246C9824B908F500538328 /* MediaCollectionViewCell.h */,
+				F3246C9924B908F500538328 /* MediaCollectionViewCell.m */,
+				F3246C9A24B908F500538328 /* MediaCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F325935324B91DBA00D6244D /* ImageVC */ = {
+			isa = PBXGroup;
+			children = (
+				F325934424B9161900D6244D /* ImageViewController.h */,
+				F325934524B9161900D6244D /* ImageViewController.m */,
+			);
+			path = ImageVC;
+			sourceTree = "<group>";
+		};
 		F35D047424B71E0600794B6B = {
 			isa = PBXGroup;
 			children = (
 				F35D047F24B71E0600794B6B /* Task06New */,
 				F35D047E24B71E0600794B6B /* Products */,
+				F325934724B91CF900D6244D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,7 +165,6 @@
 			children = (
 				F35D049A24B71ECA00794B6B /* UI */,
 				F35D049B24B71EF400794B6B /* Categories */,
-				F325111B24B7345600188B32 /* Views */,
 				F35D049924B71EBA00794B6B /* Support */,
 				F35D048C24B71E0A00794B6B /* Assets.xcassets */,
 				F35D048E24B71E0A00794B6B /* LaunchScreen.storyboard */,
@@ -105,6 +183,8 @@
 				F35D048424B71E0600794B6B /* SceneDelegate.m */,
 				F328330924B7BEAB0041C6FA /* Constants.h */,
 				F328330A24B7BEAB0041C6FA /* Constants.m */,
+				F3246C9524B9024500538328 /* ShowAlertMessage.h */,
+				F3246C9624B9024500538328 /* ShowAlertMessage.m */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -112,12 +192,10 @@
 		F35D049A24B71ECA00794B6B /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F328330424B7A6140041C6FA /* StartViewController.h */,
-				F328330524B7A6140041C6FA /* StartViewController.m */,
-				F328330624B7A6140041C6FA /* StartViewController.xib */,
-				F328330C24B7D2860041C6FA /* InfoViewController.h */,
-				F328330D24B7D2860041C6FA /* InfoViewController.m */,
-				F328330E24B7D2860041C6FA /* InfoViewController.xib */,
+				F325933624B912CB00D6244D /* StartVC */,
+				F325933524B912BB00D6244D /* InfoVC */,
+				F325935124B91D7B00D6244D /* GalleryVC */,
+				F325111B24B7345600188B32 /* Views */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -189,9 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F35D049024B71E0A00794B6B /* LaunchScreen.storyboard in Resources */,
+				F3246C9C24B908F500538328 /* MediaCollectionViewCell.xib in Resources */,
 				F35D048D24B71E0A00794B6B /* Assets.xcassets in Resources */,
 				F328331024B7D2860041C6FA /* InfoViewController.xib in Resources */,
 				F328330824B7A6140041C6FA /* StartViewController.xib in Resources */,
+				F3246C9424B8FE7E00538328 /* GalleryCollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,13 +283,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F325111E24B734C500188B32 /* FiguresView.m in Sources */,
+				F3246C9724B9024500538328 /* ShowAlertMessage.m in Sources */,
 				F325111A24B7326E00188B32 /* UIView+HexColors.m in Sources */,
 				F328330F24B7D2860041C6FA /* InfoViewController.m in Sources */,
 				F35D048224B71E0600794B6B /* AppDelegate.m in Sources */,
 				F328330724B7A6140041C6FA /* StartViewController.m in Sources */,
+				F325934624B9161A00D6244D /* ImageViewController.m in Sources */,
 				F35D049324B71E0A00794B6B /* main.m in Sources */,
 				F328330B24B7BEAB0041C6FA /* Constants.m in Sources */,
+				F3246C9B24B908F500538328 /* MediaCollectionViewCell.m in Sources */,
 				F35D048524B71E0600794B6B /* SceneDelegate.m in Sources */,
+				F3246C9324B8FE7E00538328 /* GalleryCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
